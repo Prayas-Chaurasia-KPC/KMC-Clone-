@@ -108,3 +108,23 @@ back.addEventListener('click', () => {
     console.log("Back btn clicked");
     prevSlide();
 });
+
+
+
+// Hindi English Language
+const hindi = document.querySelector('.msg-hindi-lang') ;
+const english = document.querySelector('.msg-eng-lang') ;
+
+
+const engLang = document.querySelector('.english-lang') ;
+const hindiLang = document.querySelector('.hindi-lang') ;
+
+english.addEventListener('click', ()=>{
+    hindiLang.style.display = 'none' ;
+    engLang.style.display = 'block' ;
+});
+
+hindi.addEventListener('click', ()=>{
+    hindiLang.style.display = 'block' ;
+    engLang.style.display = 'none' ;
+});
